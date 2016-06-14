@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "author": "Template Monster",
+    "body": "Monster skills!",
+    "avatarUrl": "assets/images/avatars/avatar-default.png"
+  },
+  {
+    "id": 2,
+    "author": "Grumpy Cat",
+    "body": "I'd like to know how to use redux in my app",
+    "avatarUrl": "assets/images/avatars/avatar-grumpy.png"
+  },
+  {
+    "id": 3,
+    "author": "Wow Doge",
+    "body": "Wow so much style! Good Job! ",
+    "avatarUrl": "assets/images/avatars/avatar-doge.png"
+  }
+]
