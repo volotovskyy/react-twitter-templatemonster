@@ -4,6 +4,7 @@ import jQuery from 'jquery';
 import CommentForm from './comment-form';
 import CommentAvatarList from './comment-avatar-list';
 import Comment from './comment';
+import LoginForm from './login-form';
 
 export default class CommentBox extends React.Component {
 
@@ -12,11 +13,14 @@ export default class CommentBox extends React.Component {
 
     this.state = {
       showComments: false,
-      comments: []
+      isLogged: false,
+      comments: [],
+      user: null
     };
 
     this._deleteComment = this._deleteComment.bind(this);
     this._addComment = this._addComment.bind(this);
+    this._handleSubmit = this._handleSubmit.bind(this);
   }
 
   componentWillMount() {
@@ -30,7 +34,7 @@ export default class CommentBox extends React.Component {
         <div className="cell">
           <h2>Join The Discussion</h2>
           <div className="comment-box">
-            <CommentForm addComment={this._addComment} />
+            {this.state.isLogged?<CommentForm user={this.state.user} addComment={this._addComment} />: <LoginForm _handleSubmit={this._handleSubmit}/>}
             <CommentAvatarList avatars={this._getAvatars()} />
 
             {this._getPopularMessage(comments.length)}
@@ -108,6 +112,15 @@ export default class CommentBox extends React.Component {
     );
 
     this.setState({ comments });
+  }
+
+  _handleSubmit(data) {
+    if(data.login && data.password) {
+      this.setState({
+        isLogged: true,
+        user: data
+      })
+    }
   }
 }
 

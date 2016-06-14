@@ -4,7 +4,7 @@ import jQuery from 'jquery';
 
 import {hashHistory, Router, Route, Redirect} from 'react-router';
 
-import Layout from './layout/layout'
+import Layout from './layout'
 
 import TestPage from './pages/test'
 import DescPage from './pages/desc'

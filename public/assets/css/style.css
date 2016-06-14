@@ -1,3 +1,4 @@
+/* General styles*/
 body {
   background-color: #fff;
   color: #000;
@@ -40,48 +41,47 @@ p {
   margin-top: 0;
 }
 
-.article {
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-.article-body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.article-title {
-  border-bottom: 3px solid #6ba2aa;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.article--picture-author {
-  border-bottom: 2px solid #6BA2AA;
-  color: #6BA2AA;
-  font-size: 16px;
-  padding: 0 20px 20px;
-  margin: 0 0 30px;
-  text-transform: uppercase;
-}
-
-.article--picture-img,
-.article--video-img {
-  width: 500px;
-  margin: auto;
-}
-
-.article--picture-img > img,
-.article--video-img > img {
-  max-width: 100%;
-}
-
 .cell {
   margin: 0 auto;
   max-width: 800px;
 }
 
+/* Login styles */
+.login-form {
+  position: relative;
+  height: 120px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background: #95cbef;
+  display: inline-block;
+  text-align: center;
+}
+
+.login-form input {
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.login-btn {
+  display: block;
+  height: 40px;
+  width: 80px;
+  background: #1258a0;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.login-btn:hover,
+.login-btn:focus,
+.login-btn:active {
+  background: #5a62df;
+}
+
+
+/* Comment styles */
 .comment {
   margin-bottom: 40px;
 }
@@ -112,8 +112,8 @@ p {
   transition: 0.2s ease-in-out;
 }
 
-/*.comment-actions a:active,
-.comment-actions > a:focus,*/
+.comment-actions a:active,
+.comment-actions > a:focus,
 .comment-actions > a:hover {
   color: #fff;
 }
@@ -171,7 +171,7 @@ p {
 }
 
 .comment-form::before {
-  background: url("../images/templatemonster-com.png") center no-repeat;
+  background: url("../images/templatemonster-logo.png") center no-repeat;
   content: '';
   height: 80px;
   width: 128px;
@@ -192,6 +192,7 @@ p {
   padding: 0 40px;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
+  outline: none;
 }
 
 .comment-form-actions > button:active,
@@ -237,6 +238,7 @@ p {
   }
 }
 
+/* Avatars styles */
 .comment-avatars {
   margin-bottom: 40px;
 }
@@ -270,6 +272,7 @@ p {
   width: 64px;
 }
 
+/* Top-menu styles */
 .top-menu {
   height: 35px;
 }
