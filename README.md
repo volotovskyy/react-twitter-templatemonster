@@ -1,5 +1,7 @@
 # React Twitter
 
+![Upload the iamge](https://cloud.githubusercontent.com/assets/13667038/16070591/4bc54a14-32df-11e6-8ca2-e3a9945f80c7.png)
+
 ## Installing
 
 1. Clone the repo
